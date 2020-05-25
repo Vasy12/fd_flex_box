@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background: orange;
+    border: 30px solid dodgerblue;
+}
+
+

@@ -1,0 +1,153 @@
+
+:root {
+    --primary-color: #393d45;
+    font-size: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #6f7788;
+
+}
+
+.textOverflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.userCardContainer {
+    --user-card-image-size: 200px;
+    margin: 10px;
+    color: white;
+    min-width: 300px;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0px rgba(92, 108, 168, 1);
+    background-color: var(--primary-color);
+
+}
+
+.userCardHeader {
+    background-color: white;
+    padding: 30px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.userFullName {
+    display: block;
+    margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.4em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.userInfoWrapper {
+    padding: 10%;
+}
+
+.userAboutSelf {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 30px auto;
+}
+
+.userImageWrapper {
+    display: block;
+    height: var(--user-card-image-size);
+    width: var(--user-card-image-size);
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 2px 2px 2px 0px rgba(92, 108, 168, 1);
+}
+
+.userImageWrapper > img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+.userStatWrapper {
+    text-align: center;
+    white-space: nowrap;
+    margin: auto;
+    /*
+    display: flex;
+    justify-content: space-between;
+    */
+    column-count: 3;
+    width: 100%;
+}
+
+.userStatItem {
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.statItemValue {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 0.1em;
+}
+
+.btnWrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    --btn-height: 40px;
+    padding: 10px 20px;
+    border-radius: calc(40px / 2);
+
+    flex: 1;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+.btnPrimary {
+    background-color: #4167de;
+    color: white;
+}
+
+.btnSecondary {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.btn + .btn {
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 425px) {
+    :root {
+        font-size: initial;
+    }
+}
