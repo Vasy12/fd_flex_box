@@ -3,13 +3,33 @@
     margin: 0;
 }
 
-
 .parent {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    background: orange;
-    border: 30px solid dodgerblue;
+    background: dodgerblue;
+    border: 10px solid blue;
+    height: 100vh;
 }
 
+.child {
+    border: 10px solid red;
+    background: orange;
+    padding: 40px;
+    color: white;
+    font-size: 36px;
+    margin: 20px;
+}
+
+/*FLEXIBLE BOX LAYOUT*/
+.flexContainer {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.flexItem {
+
+}
 
