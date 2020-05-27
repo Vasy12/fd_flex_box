@@ -1,35 +1,50 @@
+
 * {
-    box-sizing: border-box;
     margin: 0;
+    box-sizing: border-box;
 }
 
-.parent {
-    background: dodgerblue;
-    border: 10px solid blue;
-    height: 100vh;
+body {
+    font-family: monospace;
 }
 
-.child {
-    border: 10px solid red;
-    background: orange;
-    padding: 40px;
-    color: white;
-    font-size: 36px;
-    margin: 20px;
-}
-
-/*FLEXIBLE BOX LAYOUT*/
+/*Flexible box styles*/
 .flexContainer {
     display: flex;
 
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-evenly;
+    /*flex-flow: row nowrap*/
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-evenly;
 }
 
 .flexItem {
 
+    width: 100px;
 }
 
+/*other styles*/
+.parent {
+    border: 10px solid blue;
+    background-color: dodgerblue;
+    padding: 20px;
+}
+
+.child {
+
+    background-color: orange;
+
+
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    width: 120px;
+    padding: 20px;
+}
+
+.child:nth-child(even) {
+    border-color: darkviolet;
+    background-color: #d06dff;
+}
